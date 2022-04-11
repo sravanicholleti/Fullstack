@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./CSS/bgtopnavigation.css" /> -->
+    <link rel="stylesheet" href="CSS/bgcommon.css" />
+    <link rel="stylesheet" href="CSS/bgsidenavigation.css" />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      /* For scrolling smoothly*/
+      body,
+      html {
+        scroll-behavior: smooth;
+      }
+      main {
+      }
+
+      /* For Article Background Img*/
+      #homepage,
+      #contactpage,
+      #forsupport {
+        padding-top: 100px;
+        font-size: 42px;
+        text-align: center;
+        background: url(./Images/pexels-pixabay-235985.jpg) no-repeat center;
+        background-size: cover;
+        height: 100vh;
+      }
+      #contactpage {
+        background: url(./Images/pexels-ann-poan-5797904.jpg) no-repeat center;
+        background-size: cover;
+      }
+      #forsupport {
+        background: url(./Images/pexels-tirachard-kumtanom-733857.jpg) no-repeat
+          center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <aside class="sideNavigation">
+        <header id="mainHeader">
+          <div id="logo">
+            <h1>LOGO</h1>
+          </div>
+          <nav>
+            <ul>
+              <li class="">
+                <a href="#homepage">Home</a>
+              </li>
+              <li>
+                <a href="#contactpage">Contact</a>
+              </li>
+              <li>
+                <a href="#forsupport">Support</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </header>
+      </aside>
+      <aside class="mainSection">
+        <article id="homepage">
+          <h2>Welcome to Homepage</h2>
+        </article>
+        <article id="contactpage">
+          <h2>Welcome to ContactSection</h2>
+        </article>
+        <article id="forsupport">
+          <h2>Welcome to SupportSection</h2>
+        </article>
+      </aside>
+      <div class="clear"></div>
+    </main>
+  </body>
+</html>

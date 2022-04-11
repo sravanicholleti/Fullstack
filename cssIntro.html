@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/externalstyle.css" />
+
+    <style>
+      /* div {
+        background-color: antiquewhite;
+      }
+      #onlyone {
+        background-color: limegreen;
+      }
+      .oneorgrouped {
+        background-color: rgb(66, 66, 209);
+      } */
+      h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--INLINE| INTERNAL| EXTERNAL-->
+    <!--ID| CLASS| ELEMENT-->
+
+    <div style="color: red">Three types of CSS</div>
+    <div id="onlyone">
+      css in element's starting tag, in head section, in seperate new file.
+    </div>
+    <div class="oneorgrouped">
+      In internal and external we need to refer elements as we are writing away
+      from from, they are id,class,element.
+    </div>
+    <div class="oneorgrouped">
+      high priority is for inline when it comes to types,Even though we have to
+      prefer external and for id in selectors.
+    </div>
+
+    <h1 style="color: gray">priority check among types</h1>
+  </body>
+</html>

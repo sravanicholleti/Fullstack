@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  background-color: gray;
+  color: white;
+}
+.logo {
+  float: left;
+  padding: 10px;
+  background-color: rgb(150, 147, 147);
+}
+.menu {
+  float: right;
+}
+.menu-item {
+  float: left;
+  list-style: none;
+  background-color: black;
+  padding: 10px;
+  margin-left: 3px;
+}
+.homeContent {
+  height: 100vh;
+  background: url(../Images/pexels-pixabay-158536.jpg) no-repeat center,
+    url(../Images/pexels-pixabay-326055.jpg) no-repeat center fixed;
+  background-size: 15%, cover;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+/* .homePage {
+  font-size: 40px;
+  text-transform: uppercase;
+} */
+
+/* making li elements side by side and having gap bten them using diaplay inline block. */
+/* .subSection {
+  margin-top: 10px;
+}
+ol li {
+  border: 2px solid;
+  padding: 10px;
+  margin-bottom: 5px;
+  display: inline-block;
+  margin-left: 97px;
+} */
+/* making li elements side by side and having gap bten them using floats */
+ol li {
+  float: left;
+  border: 1px solid;
+  padding: 10px;
+  margin-left: 97px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  list-style: none;
+}
+.clear {
+  clear: both;
+}

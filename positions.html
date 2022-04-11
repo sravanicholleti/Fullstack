@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+        margin-top: 5px;
+      }
+      #static {
+        position: static;
+        top: 50px;
+        left: 100px;
+      }
+      #relative {
+        position: relative;
+        width: 1000px;
+        height: 400px;
+        top: 3px;
+        left: 100px;
+        background-color: yellowgreen;
+      }
+      #absolute {
+        position: absolute;
+        top: 225px;
+        right: 700px;
+        background-color: blue;
+      }
+      #fixed {
+        position: fixed;
+        background-color: aqua;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        z-index: -2;
+      }
+      #sticky {
+        position: sticky;
+        top: 70px;
+      }
+      header {
+        background-color: rgb(188, 205, 226);
+        color: white;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+      }
+      header nav {
+        width: 75%;
+        margin: auto;
+        background-color: rgb(76, 74, 74);
+        display: flex;
+        justify-content: space-between;
+      }
+      header nav ul {
+        display: flex;
+        list-style: none;
+      }
+      header nav ul li {
+        padding: 20px;
+      }
+      #logo {
+        padding: 20px;
+      }
+      #article {
+        background: url(../Fullstack/Images/pexels-pixabay-531321.jpg) no-repeat
+          center;
+        background-size: cover;
+        color: white;
+        padding-top: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="static">static</div>
+    <div id="relative">relative</div>
+    <div id="absolute">absolute</div>
+    <div id="fixed">fixed</div>
+    <div id="sticky">sticky</div>
+    <article style="height: 100vh">
+      to seperate all from sticky, so the we can see how sticky works
+    </article>
+    <div>to see how sticky works</div>
+    <!-- <header>
+      <nav>
+        <h1 id="logo">LOGO</h1>
+        <ul>
+          <li>Hello</li>
+          <li>Hello</li>
+          <li>Hello</li>
+        </ul>
+      </nav>
+    </header> -->
+    <!-- <article id="article" style="height: 170vh">
+      Section-added image, now if we scroll this article part will scroll but
+      the header is fixed.
+    </article> -->
+  </body>
+</html>

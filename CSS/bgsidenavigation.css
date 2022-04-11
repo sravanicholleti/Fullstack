@@ -1,0 +1,43 @@
+#mainHeader {
+  margin-top: 100px;
+}
+#logo {
+  border-bottom: 2px solid;
+}
+
+/* For Article Content*/
+h2 {
+  text-align: center;
+  padding-top: 100px;
+  padding-right: 20px;
+  color: rgb(66, 14, 14);
+}
+.active {
+  text-decoration: underline floralwhite;
+}
+.mainSection {
+  overflow: auto;
+  height: 100vh;
+  float: left;
+  width: 85%;
+  scroll-behavior: smooth;
+}
+.sideNavigation {
+  height: 100vh;
+  padding: 10px;
+  float: left;
+  width: 15%;
+  text-align: center;
+}
+nav {
+  margin-top: 100px;
+}
+nav ul li {
+  padding-top: 10px;
+  border-bottom: 1px solid;
+  text-align: start;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}

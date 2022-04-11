@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1px solid;
+        margin-left: -200px;
+        text-align: center;
+        line-height: 200px;
+        background-color: rgb(121, 0, 233);
+        animation-name: demo;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        /* animation-direction: alternate;
+        animation-delay: 0.2s; */
+        animation-timing-function: linear;
+      }
+      .demo:hover {
+        animation-play-state: paused;
+      }
+      @keyframes demo {
+        0% {
+          /* width: 0%; */
+          /* margin-top: 0px; */
+          transform: rotate(3turn);
+          margin-left: -200px;
+        }
+        10% {
+          /* width: 200px;
+          height: 500px; */
+          /* background-color: yellow; */
+          /* margin-top: 100px; */
+          /* transform: rotate(2turns); */
+          /* transform: translate(190px, 0px);
+          transform: skew(-45deg); */
+          /* border-radius: 5px; */
+          /* border-radius: 100%; */
+          margin-left: 0px;
+        }
+        100% {
+          /* width: 100%; */
+          /* background-color: paleturquoise; */
+          /* margin-top: 550px; */
+          transform: rotate(5turns);
+          margin-left: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--animation is done by its own while transition are done when we hover or on direct ele-->
+    <div class="demo">Demo</div>
+  </body>
+</html>

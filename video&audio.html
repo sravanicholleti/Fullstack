@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      .main {
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+      }
+      #demo {
+        width: 100%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        z-index: -999;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <video id="demo" autoplay="on" loop>
+        <source
+          src="./Images/pexels-matthias-groeneveld-5692315.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <h1>Hello World</h1>
+      <audio controls loop style="position: absolute; top: 0%; right: 0%">
+        <source
+          src="./Images/morning-garden-acoustic-chill-15013.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+    </main>
+  </body>
+</html>

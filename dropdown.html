@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      .dropdown {
+        width: 100px;
+        padding: 10px;
+      }
+      .dropdown h4 {
+        width: 100px;
+        padding: 5px;
+        background-color: rgb(137, 200, 240);
+        border: 1px solid;
+        margin-left: 5px;
+        margin-top: 5px;
+      }
+      .dropdown ul {
+        display: none;
+        padding: 10px;
+      }
+      .dropdown:hover ul {
+        display: block;
+        list-style: none;
+        width: 100px;
+        padding: 5px;
+        margin-left: 5px;
+        margin-top: 3px;
+        text-align: center;
+        text-decoration: underline;
+        color: blue;
+        background-color: rgb(185, 215, 240);
+      }
+      .dropdown ul li {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <h4>Drop Down</h4>
+      <ul>
+        <li>goto 1</li>
+        <li>goto 2</li>
+        <li>goto 3</li>
+      </ul>
+    </div>
+  </body>
+</html>

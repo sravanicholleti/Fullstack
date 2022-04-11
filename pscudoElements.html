@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demo {
+        background-color: red;
+        padding: 10px;
+      }
+      .demo p:only-child {
+        padding: 20px;
+        width: 500px;
+        background-color: blue;
+      }
+      ul li {
+        background-color: blue;
+        margin-top: 3px;
+      }
+      ul li:nth-child(odd) {
+        background-color: aqua;
+        margin-top: 3px;
+      }
+      ul li:nth-child(5) {
+        background-color: yellow;
+        margin-top: 2px;
+        padding: 10px;
+      }
+      ul li:last-child {
+        background-color: chocolate;
+        margin-top: 2px;
+        padding: 10px;
+      }
+      ul li:first-child {
+        background-color: coral;
+        margin-top: 2px;
+        padding: 10px;
+      }
+      h1 {
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+        position: relative;
+      }
+      h1::after {
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: slateblue;
+        position: absolute;
+        right: 43%;
+        bottom: -5px;
+      }
+      h1::before {
+        content: ":)";
+      }
+      h1::selection {
+        background-color: lightsalmon;
+        color: black;
+      }
+      p::first-letter {
+        font-size: 50px;
+      }
+      p::first-line {
+        font-weight: bolder;
+        font-style: italic;
+        color: red;
+      }
+      #btn {
+        padding: 10px;
+        width: 100px;
+        border: 1px solid;
+        background-color: rgb(66, 137, 243);
+        margin: auto;
+        margin-top: 20px;
+        transition: 1s; /*easing- animating impact*/
+      }
+      #btn:hover {
+        background-color: rgb(99, 187, 234);
+        color: white;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo">
+      <p>
+        pscudo elements are used to style specified parts of the element. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Est explicabo culpa
+        minus pariatur labore, repellendus saepe incidunt ullam quidem
+        exercitationem eveniet.
+      </p>
+    </div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+    </ul>
+    <h1>This is Heading</h1>
+    <div id="btn">click here!</div>
+  </body>
+</html>

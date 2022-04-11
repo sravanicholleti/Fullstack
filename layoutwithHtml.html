@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .common {
+        height: 70px;
+        background-color: rgb(123, 83, 233);
+        color: #ffff;
+      }
+
+      #leftside,
+      #rightside,
+      #content {
+        float: left;
+        width: 20%;
+        height: 60vh;
+        background-color: rgb(223, 139, 84);
+      }
+
+      #content {
+        background-color: rgb(247, 243, 29);
+        width: 60%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--layout using div element of html4-->
+    <!-- <div id="main">
+      <div id="header" class="common">header</div>
+      <div id="leftside">leftside</div>
+      <div id="content">content</div>
+      <div id="rightside">rightside</div>
+      <div style="clear: both"></div>
+      <div id="footer" class="common">footer</div>
+    </div> -->
+
+    <!--layout using html5 elements-->
+    <!--main,header,nav,aside,article,footer,section,figure,figcaption-->
+    <main id="main">
+      <header id="header" class="common">
+        <nav>heading</nav>
+      </header>
+      <aside id="leftside">leftside</aside>
+      <article id="content">content</article>
+      <aside id="rightside">rightside</aside>
+      <div style="clear: both"></div>
+      <footer id="footer" class="common">footer</footer>
+    </main>
+  </body>
+</html>

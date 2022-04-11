@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="./floatsnFlexbox.html">
+      <div>
+        <label for="name">User Name</label>
+        <input
+          type="text"
+          id="name"
+          required
+          autocomplete="off"
+          maxlength="9"
+          value="sravz"
+        />
+      </div>
+      <div>
+        <label for="pswd">Password</label>
+        <input type="password" id="pswd" required value="1234567" />
+      </div>
+      <input
+        type="email"
+        placeholder="Please enter Email"
+        required
+        value="sravz@gmail.com"
+        readonly
+      />
+      <input type="search" placeholder="Search" disabled />
+      <input type="number" maxlength="9" value="56789" />
+      <input type="file" />
+      <label for="color">Please choose a color</label>
+      <input type="color" id="color" />
+      <input type="date" />
+      <input type="range" />
+
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Female</label>
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Male</label>
+
+      <input type="checkbox" id="hyd" />
+      <label for="hyd">Hyd</label>
+      <input type="checkbox" id="ban" />
+      <label for="ban">Banglore</label>
+      <input type="checkbox" id="del" />
+      <label for="del">Delhi</label>
+
+      <select name="city" id="city">
+        <option value="none">Choose a city</option>
+        <option value="Hyd">HYD</option>
+        <option value="Ban">BANGLORE</option>
+        <option value="Del">DELHI</option>
+        <option value="Viz">VIZG</option>
+      </select>
+
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+
+      <input type="submit" value="signup" />
+      <input type="button" value="signin" />
+      <input type="reset" value="reset" />
+
+      <input type="button" value="login" />
+    </form>
+  </body>
+</html>

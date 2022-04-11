@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header>p{
+            background-color: orange;
+        }
+        article p{
+            background-color: blue;
+        }
+        span+div{
+            background-color: yellowgreen;
+        }
+        article~nav{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<!-- Child(>),Decendent(space),Sibling(+),SiblingAll(~)-->
+<body>
+    <main>
+        <header class="header">
+            <p>Block</p>
+            <p>
+                <h1>Heading</h1>
+            </p>
+            <p>
+                 <h1>Heading2</h1>
+            </p>
+        </header>
+        <article>
+            <span>Hoo</span>
+            <div>Hehe</div>
+            <div>uhaha</div>
+            <ul>
+                <li>
+                    <p> Hey</p>
+                </li>
+                <li>
+                    <p>
+                        Hello
+                    </p>
+                </li>
+            </ul>
+            <p>Hi</p>
+            <p>Haha</p>
+        </article>
+        <nav>sib1</nav>
+        <nav>sib2</nav>
+        <nav>sib3</nav>
+    </main>
+</body>
+</html>

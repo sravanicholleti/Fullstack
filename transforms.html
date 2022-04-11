@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style: none;
+        width: 90%;
+        margin: 100px auto;
+        padding: 10px;
+      }
+      ul li {
+        display: inline-block;
+        border: 3px solid rgb(34, 14, 14);
+        width: 200px;
+        height: 300px;
+        text-align: center;
+        /* line-height: 200px; */
+        transition: 0.5s;
+        overflow: hidden;
+        position: relative;
+      }
+      ul li h2 {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        height: 50px;
+        background-color: whitesmoke;
+        padding: 0%;
+        line-height: 50px;
+        transform: translate(0px, 50px);
+        transition: 1s;
+      }
+      ul li img {
+        width: 100%;
+        transition: 0.5s;
+        height: 100%;
+      }
+      ul li:nth-child(1):hover img {
+        transform: scale(1.5, 1.5);
+      }
+      ul li:nth-child(1):hover h2 {
+        transform: translate(0px, 0px);
+      }
+      /* ul li:nth-child(1):hover {
+        
+        transform: scale(0.5, 0.5);
+      } */ /* width: 350px;
+        height: 350px; */
+      ul li:nth-child(2):hover {
+        /* transform: rotate(180deg); */
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+      }
+      ul li:nth-child(3):hover {
+        transform: translate(120px, 0px);
+      }
+      ul li:nth-child(4):hover {
+        transform: skewX(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 4 types- scale| rotate| translate| skew-->
+    <ul>
+      <li>
+        <img
+          src="./Images/kourosh-qaffari-RrhhzitYizg-unsplash.jpg"
+          alt="kourosh-qaffari-RrhhzitYizg-unsplash"
+        />
+        <h2>Read Book</h2>
+      </li>
+      <li>rotate</li>
+      <li>translate</li>
+      <li>skew</li>
+    </ul>
+  </body>
+</html>
